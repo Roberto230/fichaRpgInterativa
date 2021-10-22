@@ -1,0 +1,62 @@
+*{margin:0;padding: 0;}
+input{
+    padding: 5px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.container .menu_lateral{
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    width: 100px;
+
+}
+.buttons input{
+    cursor: pointer;
+    height: 40px;
+    padding: 5px;
+    
+    width: 50px;
+}
+.container .menu_lateral .buttons{
+    align-items: center;
+
+}
+.container .form_ficha .name_player input{
+    margin: 0 0 5px 0;
+}
+ .container_status .satus .life{
+    background-color: red;
+    height: 5px;
+}
+/*CLASSE PARA TESTES*/
+.teste{
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+.teste .teste_life{
+    background-color: red;
+    height: 10px;
+}
+.container_atributos .atributos input{
+
+    margin: 0 5px 0 5px;
+    padding: 5px;
+    width: 40px;
+}
+.container_atributos .atributos{
+    margin: 0 0 5px 0;
+}
+.fichaPlayer{
+    background-color: rgb(175, 174, 174);
+    display: none;
+    padding: 5px;
+    height: 400px;
+    width: 500px;
+}

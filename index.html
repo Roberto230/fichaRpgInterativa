@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="menu_lateral">
+            <div class="buttons">
+                <input type="submit" value="Editar" class="btn_editar">
+            </div>
+        </div>
+        <form class="form_ficha"><!--FORMULÁRIO DE PREENCHIMENTO-->
+            <div class="name_player"><!--CRIAR NOME DO PLAYER-->
+                <input type="text" name="nome" id="name" placeholder="Name Player"/>
+            </div>
+            <div class="container_status"> <!--STATUS DO PERSONAGEM HP/MANA/ENERGIA-->
+                <div class="status">
+                    <p>HP: </p>
+                    <div class="container_life">
+                        <div class="life"></div>
+                    </div>
+                </div>
+                <div class="status">
+                    <p>MANA: </p>
+                    <div class="container_mana">
+                        <div class="mana"></div>
+                    </div>
+                </div>
+                <div class="status">
+                    <p>ENERGIA: </p>
+                    <div class="container_energia">
+                        <div class="energia"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_atributos"><!--ATRIBUTOS DO PLAYER: ATK/DEF/FOR/DEX/AGL/AST/DDFM-->
+                <div class="atributos">
+                    <label for="atk">ATK</label>
+                    <input type="number" name="atk" id="atk"/>
+                    <label for="def">DEF</label>
+                    <input type="number" name="def" id="def"/>
+                    <label for="for">FOR</label>
+                    <input type="number" name="for" id="for"/>
+                </div>
+                <div class="atributos">
+                    <label for="dex">DEX</label>
+                    <input type="number" name="dex" id="dex"/>
+                    <label for="agl">AGL</label>
+                    <input type="number" name="agl" id="agl"/>
+                    <label for="ast">AST</label>
+                    <input type="number" name="ast" id="ast"/>
+                </div>
+                <div class="atributos">
+                    <label for="dfm">DFM</label>
+                    <input type="number" name="dfm" id="dfm"/>
+                </div>
+            </div>
+            <div class="container_buttons"><!--BOTÕES-->
+                <div class="buttons">
+                    <input type="submit" value="Eviar" class="btn_enviar">
+                </div>
+            </div>
+        </form>
+        <div class="fichaPlayer"><!--FICHA PRONTA DEPOIS DE ENVIADA-->
+        </div>
+        <div class="teste">
+            <div class="teste_life"></div>
+        </div>
+       
+    </div>
+
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script/function.js"></script>
+</body>
+</html>
